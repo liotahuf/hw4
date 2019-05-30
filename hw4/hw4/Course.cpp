@@ -5,6 +5,7 @@
 
 Course::Course(int num, char* name, int hw_num, double hw_weigh) : num_(num), hw_num_(hw_num), hw_weigh_(hw_weigh)
 {
+	name_ = new char[strlen(name) + 1];
 	strcpy(name_, name);
 	hw_grades_ = new int[hw_num_];
 }
@@ -13,7 +14,7 @@ Course::~Course()
 {
 	if (name_ != NULL)
 	{
-		delete name_;
+		delete []name_;
 	}
 	if (hw_grades_ != NULL)
 	{

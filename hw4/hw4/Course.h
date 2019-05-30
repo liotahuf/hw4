@@ -4,7 +4,7 @@
 class Course {
 public:
 	Course (int num, char* name, int hw_num, double hw_weigh);
-	~Course();
+	virtual ~Course();
 	int getNum() const;
 	char* getName() const;
 	int getExamGrade() const;
@@ -16,7 +16,7 @@ public:
 	int setExamGrade(int grade);
 	int setHwGrade(int hw_num, int grade);
 
-private:
+protected:
 	int num_;
 	char* name_;
 	int hw_num_;
