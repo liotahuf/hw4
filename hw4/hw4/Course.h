@@ -6,13 +6,13 @@ public:
 	Course (int num, char* name, int hw_num, double hw_weigh);
 	~Course();
 	int getNum() const;
-	char* getName()const;
+	char* getName() const;
 	int getExamGrade() const;
-	int getHwGrade() const;
+	int getHwGrade(int hw_num) const;
 	int getHwNum() const;
 	double  getHwWeigh() const;
-	int getHwAverage() const;
-	int getCourseGrade() const;
+	double getHwAverage() const;
+	virtual int getCourseGrade() const;
 	int setExamGrade(int grade);
 	int setHwGrade(int hw_num, int grade);
 
