@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Course.h" />
+    <ClInclude Include="CS_Course.h" />
+    <ClInclude Include="EE_Course.h" />
+    <ClInclude Include="Proj.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Course.cpp" />
+    <ClCompile Include="CS_Course.cpp" />
+    <ClCompile Include="EE_Course.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
